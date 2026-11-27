@@ -5,10 +5,10 @@ import wave
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import sounddevice as sd
-from faster_whisper import WhisperModel
-from ollama import Client
-from piper import PiperVoice
+import sounddevice as sd ##take sound from device
+from faster_whisper import WhisperModel ##convert speech to text
+from ollama import Client ##apna llm
+from piper import PiperVoice ##convert text to speech
 
 ROOT = Path(__file__).resolve().parent
 VOICE_PATH = ROOT / "voices" / "en_US-lessac-medium.onnx"

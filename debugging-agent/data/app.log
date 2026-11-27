@@ -1,0 +1,7 @@
+2026-11-26T09:41:00Z INFO  orders-api started
+2026-11-26T09:42:03Z WARN  db_pool active=10 max=10 waiting=6
+2026-11-26T09:42:08Z ERROR code=DB_TIMEOUT acquiring database connection timed out after 5000ms request=ord-201
+2026-11-26T09:42:08Z ERROR GET /orders returned HTTP 503 request=ord-201
+2026-11-26T09:42:10Z WARN  db_pool active=10 max=10 waiting=9
+2026-11-26T09:42:15Z ERROR code=DB_TIMEOUT acquiring database connection timed out after 5000ms request=ord-202
+2026-11-26T09:42:15Z ERROR GET /orders returned HTTP 503 request=ord-202

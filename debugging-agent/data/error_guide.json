@@ -1,0 +1,8 @@
+{
+  "DB_TIMEOUT": {
+    "meaning": "The application could not acquire a database connection before its timeout.",
+    "likely_cause": "Possible database connection-pool exhaustion. A saturated pool explains the timeouts, but this log cannot show why the connections stayed busy.",
+    "other_hypotheses": ["Slow queries or long transactions", "Connections not returned to the pool"],
+    "next_checks": ["Compare active connections and wait times with traffic", "Inspect slow queries and open transactions", "Check that connections are released on both success and error paths"]
+  }
+}
